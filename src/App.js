@@ -1,10 +1,15 @@
-import "./styles.css";
+import React, { Component } from "react";
+import "./App.css";
+import Hangman from "./Hangman";
 
-export default function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Edit to see some magic happen!</h2>
-    </div>
-  );
+class App extends Component {
+	render() {
+		return (
+			<div className="App">
+				<Hangman />
+			</div>
+		);
+	}
 }
+
+export default App;
